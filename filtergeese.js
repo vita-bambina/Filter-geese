@@ -1,0 +1,7 @@
+function gooseFilter(birds){
+    const geese= ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"];
+    return birds.filter(bird => !geese.includes(bird))
+}
+console.log(gooseFilter(["Mallard", "Hook Bill", "African", "Crested", "Pilgrim", "Toulouse", "Blue Swedish"]));
+console.log(gooseFilter(["Roman Tufted", "Buff", "Crested", "Steinbacher", "Silver Appleyard"]));
+console.log(gooseFilter(["Mallard", "Barbary", "Hook Bill", "Blue Swedish", "Crested"]));
